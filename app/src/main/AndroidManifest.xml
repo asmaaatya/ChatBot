@@ -13,13 +13,17 @@
         android:theme="@style/Theme.ChatBot"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
-            android:exported="true">
+            android:name=".ui.RecognitionActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false">
 
             <meta-data
                 android:name="android.app.lib_name"

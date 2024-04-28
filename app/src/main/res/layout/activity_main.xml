@@ -16,14 +16,28 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_above="@id/type_text"
+            android:layout_below="@id/speak_icon"
             android:id="@+id/message_list"
             tools:listitem="@layout/message_item"
             android:layout_height="match_parent"
 
             />
-
-
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/speak"
+    android:id="@+id/speak_icon"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wellcome"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:id="@+id/welcome_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"

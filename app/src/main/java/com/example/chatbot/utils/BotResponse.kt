@@ -5,7 +5,7 @@ import com.example.chatbot.utils.Constants.OPEN_GOOGLE
 import com.example.chatbot.utils.Constants.OPEN_SEARCH
 
 object BotResponse {
-    fun basicresponse(myMessage: String): String {
+    fun basicResponse(myMessage: String): String {
         val random=(0..2).random()
         val mes=myMessage.toLowerCase()
        return when {
@@ -17,14 +17,14 @@ object BotResponse {
                    else -> "error"
                }
            }
-           mes.contains("how are you") ->{
+           mes.contains("مرحبا") ->{
                when (random){
-                   0 -> "fine"
-                   1 -> "all right"
-                   2 -> "good"
+                   0 -> "اهلا بك"
+                   1 -> "شكرا لعودتك"
                    else -> "error"
                }
            }
+
            mes.contains("open")&&mes.contains("google") ->{OPEN_GOOGLE}
            mes.contains("search") ->{
                OPEN_SEARCH}
